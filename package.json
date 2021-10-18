@@ -1,0 +1,32 @@
+{
+  "name": "testimonials-slider",
+  "version": "1.0.0",
+  "description": "![Design preview for the Coding bootcamp testimonials slider coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaji1127/Testimonials-Slider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaji1127/Testimonials-Slider/issues"
+  },
+  "homepage": "https://github.com/Kaji1127/Testimonials-Slider#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "browser-sync": "^2.27.5",
+    "cssnano": "^5.0.8",
+    "fibers": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.3.9",
+    "sass": "^1.43.2"
+  }
+}
