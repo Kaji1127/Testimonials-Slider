@@ -1,0 +1,14 @@
+@use 'utility' as *;
+
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: var(--font-inter);
+	font-weight: 300;
+	color: var(--darkBlue);
+}
+
+.heading-secondary {
+	font-size: 1.5rem;
+}
