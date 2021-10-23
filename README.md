@@ -24,10 +24,8 @@ This is a solution to the [Coding bootcamp testimonials slider challenge on Fron
 
 ### スクリーンショット
 
-・スクリーンショット(モバイル)
 ![](./screenshot-mobile.png)
 
-・スクリーンショット(PC)
 ![](./screenshot.png)
 
 ### リンク
