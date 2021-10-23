@@ -24,7 +24,7 @@ This is a solution to the [Coding bootcamp testimonials slider challenge on Fron
 
 ### スクリーンショット
 
-![](./screenshot-mobile.png)
+![](./screenshot-mobile.jpg)
 
 <!-- ![](./screenshot.png) -->
 
