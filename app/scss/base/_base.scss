@@ -1,7 +1,28 @@
 @use 'utility' as *;
-
+.wrapper {
+	background-image: url(../images/pattern-curve.svg);
+	background-repeat: no-repeat;
+	background-size: 75% 15%;
+	background-position: left bottom;
+}
 .container {
-	width: 100%;
 	max-width: 32.7rem;
 	margin: 0 auto;
+	height: 100vh;
+
+	@include breakpoint(small) {
+		max-width: 54rem;
+	}
+
+	@include breakpoint(medium) {
+		max-width: 68rem;
+	}
+
+	@include breakpoint(large) {
+		max-width: 90rem;
+	}
+
+	@include breakpoint(xlarge) {
+		max-width: 110rem;
+	}
 }

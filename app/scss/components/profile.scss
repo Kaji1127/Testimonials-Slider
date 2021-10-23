@@ -1,32 +1,90 @@
 @use 'utility' as *;
 
 .profile {
-	&__img-content {
-		position: relative;
-		margin-bottom: 2rem;
-		padding: 3.6rem;
-		background-image: url(../images/pattern-bg.svg);
-		background-position: 0px 8px;
-		background-size: contain;
-		background-repeat: no-repeat;
+	display: grid;
+
+	@include breakpoint(medium) {
+		grid-template-columns: 1.17fr 1fr;
+		align-items: center;
 	}
 
-	&__img {
+	&__image-content {
+		position: relative;
+		padding: 3.6rem;
+		background-image: url(../images/pattern-bg.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		@include breakpoint(small) {
+			padding: 4.8rem;
+		}
+
+		@include breakpoint(medium) {
+			grid-column: 2 / -1;
+			padding: 2.4rem;
+		}
+
+		@include breakpoint(large) {
+			padding: 6rem;
+		}
+	}
+
+	&__image {
 		border-radius: 5px;
-		box-shadow: 0 40px 50px -30px hsla(240, 38%, 20%, 0.5);
+		box-shadow: 0 4rem 5rem -3rem hsla(240, 38%, 20%, 0.5);
+
+		@include breakpoint(medium) {
+		}
 	}
 
 	&__description-content {
-		font-size: 1.8rem;
 		text-align: center;
+
+		@include breakpoint(medium) {
+			grid-row: 1 / 2;
+			text-align: left;
+			width: 110%;
+			z-index: 2;
+		}
+		@include breakpoint(large) {
+			width: 122%;
+		}
+
+		@include breakpoint(xlarge) {
+			width: 125%;
+		}
 	}
 
-	&__description {
+	&__text {
+		font-size: 1.8rem;
+		color: var(--darkBlue);
+		font-weight: 300;
 		margin-bottom: 2rem;
+
+		@include breakpoint(medium) {
+			font-size: 2.4rem;
+		}
+
+		@include breakpoint(xlarge) {
+			font-size: 3.2rem;
+		}
+	}
+
+	&__status {
+		display: flex;
+		flex-direction: column;
+		font-size: 1.5rem;
+
+		@include breakpoint(medium) {
+			align-items: center;
+			flex-direction: row;
+			column-gap: 1rem;
+			font-size: 2rem;
+		}
 	}
 
 	&__job {
-		font-size: 1.5rem;
 		color: var(--grayshBlue);
+		font-weight: 500;
 	}
 }

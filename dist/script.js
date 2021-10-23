@@ -1,2 +1,2 @@
-
+const slides=document.querySelectorAll(".slider__slide"),slider=document.querySelector(".slider"),prevBtn=document.querySelectorAll(".slider__button--prev"),nextBtn=document.querySelectorAll(".slider__button--next");let curSlide=0;const maxSlide=slides.length,goToSlide=e=>{slides.forEach(((l,d)=>{l.style.transform=`translate(${100*(d-e)}%, -50%)`}))},nextSlide=()=>{curSlide===maxSlide-1?curSlide=0:curSlide++,goToSlide(curSlide)},prevSlide=()=>{0===curSlide?curSlide=maxSlide-1:curSlide--,goToSlide(curSlide)};goToSlide(0),prevBtn.forEach((e=>{e.addEventListener("click",prevSlide)})),nextBtn.forEach((e=>{e.addEventListener("click",nextSlide)}));
 //# sourceMappingURL=script.js.map

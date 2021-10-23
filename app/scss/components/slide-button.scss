@@ -1,17 +1,1 @@
 @use 'utility' as *;
-
-.slide-button {
-	width: 8rem;
-	height: 4rem;
-	padding: 0 1.7rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: var(--white);
-	border-radius: 28px;
-	box-shadow: 0 15px 20px -10px hsla(240, 38%, 20%, 0.09);
-	position: absolute;
-	bottom: 16px;
-	left: 50%;
-	transform: translateX(-50%);
-}

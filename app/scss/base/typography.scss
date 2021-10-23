@@ -11,4 +11,8 @@ body {
 
 .heading-secondary {
 	font-size: 1.5rem;
+
+	@include breakpoint(medium) {
+		font-size: 2rem;
+	}
 }

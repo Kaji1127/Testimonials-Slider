@@ -9,10 +9,6 @@
 
 		<title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
 
-		<!--=================== Swiper ===================-->
-		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
 		<!--================== Google Font ===================-->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,35 +32,65 @@
 		</style>
 	</head>
 	<body>
-		<main class="swiper">
-			<div class="wrapper swiper-wrapper">
-				<div class="container profile swiper-slide">
-					<div class="profile__img-content">
-						<img src="images/image-tanya.jpg" alt="Tanya" class="profile__img" />
-						<div class="slide-button">
-							<span class="prev-button">
-								<img src="images/icon-prev.svg" alt="" />
-							</span>
-							<span class="next-button">
-								<img src="images/icon-next.svg" alt="" />
-							</span>
-						</div>
-					</div>
-					<div class="profile__description-content">
-						<p class="profile__description">
-							“ I’ve been interested in coding for a while but never taken the jump,
-							until now. I couldn’t recommend this course enough. I’m now in the job
-							of my dreams and so excited about the future. ”
-						</p>
-						<h2 class="profile__name heading-secondary">Tanya Sinclair</h2>
-						<p class="profile__job">UX Engineer</p>
-					</div>
+		<main>
+			<div class="wrapper">
+				<!--======= Slider =======-->
+				<div class="slider container">
+					<!--======= Slide 1 =======-->
+					<section class="profile slider__slide">
+						<article class="profile__image-content">
+							<img src="images/image-tanya.jpg" alt="Tanya" class="profile__image" />
+							<div class="slider__button-content">
+								<button class="slider__button slider__button--prev">
+									<img src="images/icon-prev.svg" alt="Prev" />
+								</button>
+								<button class="slider__button slider__button--next">
+									<img src="images/icon-next.svg" alt="Next" />
+								</button>
+							</div>
+						</article>
+						<article class="profile__description-content">
+							<p class="profile__text">
+								“ I’ve been interested in coding for a while but never taken the
+								jump, until now. I couldn’t recommend this course enough. I’m now in
+								the job of my dreams and so excited about the future. ”
+							</p>
+							<div class="profile__status">
+								<h2 class="heading-secondary">Tanya Sinclair</h2>
+								<p class="profile__job">UX Engineer</p>
+							</div>
+						</article>
+					</section>
+
+					<!--================ Slide 2 ================-->
+					<section class="profile slider__slide">
+						<article class="profile__image-content">
+							<img src="images/image-john.jpg" alt="John" class="profile__image" />
+							<div class="slider__button-content">
+								<button class="slider__button slider__button--prev">
+									<img src="images/icon-prev.svg" alt="Prev" />
+								</button>
+								<button class="slider__button slider__button--next">
+									<img src="images/icon-next.svg" alt="Next" />
+								</button>
+							</div>
+						</article>
+						<article class="profile__description-content">
+							<p class="profile__text">
+								“ If you want to lay the best foundation possible I’d recommend
+								taking this course. The depth the instructors go into is incredible.
+								I now feel so confident about starting up as a professional
+								developer. ”
+							</p>
+							<div class="profile__status">
+								<h2 class="heading-secondary">John Tarkpor</h2>
+								<p class="profile__job">Junior Front-end Developer</p>
+							</div>
+						</article>
+					</section>
 				</div>
 			</div>
 		</main>
-		“ If you want to lay the best foundation possible I’d recommend taking this course. The
-		depth the instructors go into is incredible. I now feel so confident about starting up as a
-		professional developer. ” John Tarkpor Junior Front-end Developer
 
 		<div class="attribution">
 			Challenge by

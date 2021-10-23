@@ -1,0 +1,66 @@
+@use 'utility' as *;
+
+.slider {
+	position: relative;
+	overflow: hidden;
+
+	&__slide {
+		transition: transform 0.4s;
+		position: absolute;
+		top: 50%;
+	}
+	&__button-content {
+		display: flex;
+		position: absolute;
+		width: 8rem;
+		height: 4rem;
+		bottom: 17px;
+		left: 50%;
+		transform: translateX(-50%);
+
+		@include breakpoint(small) {
+			bottom: 30px;
+		}
+
+		@include breakpoint(medium) {
+			// width: 11.2rem;
+			// height: 5.6rem;
+			bottom: 6px;
+			left: 95px;
+		}
+
+		@include breakpoint(large) {
+			width: 11.2rem;
+			height: 5.6rem;
+			bottom: 33px;
+			left: 140px;
+		}
+	}
+
+	&__button {
+		background-color: var(--white);
+		border: none;
+		width: 50%;
+		padding: 1.4rem 1.7rem;
+		cursor: pointer;
+
+		@include breakpoint(large) {
+			padding: 2rem 2.4rem;
+		}
+
+		& img {
+			width: 100%;
+			height: 100%;
+		}
+
+		&--prev {
+			border-top-left-radius: 2.8rem;
+			border-bottom-left-radius: 2.8rem;
+		}
+
+		&--next {
+			border-top-right-radius: 2.8rem;
+			border-bottom-right-radius: 2.8rem;
+		}
+	}
+}
